@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Corporation Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="ambolt">
+                <img src="https://cdn.vectorstock.com/i/500p/99/29/blacksmith-anvil-icon-outline-style-vector-37429929.jpg" alt="Acme Logo" class="logo">
+            </div>
+         </div>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h1>Welcome to Acme Corporation</h1>
+            <p>We are committed to delivering quality products and services that exceed your expectations.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Service One</h3>
+                    <p>Description of service one.</p>
+                </div>
+                <div class="service">
+                    <h3>Service Two</h3>
+                    <p>Description of service two.</p>
+                </div>
+                <div class="service">
+                    <h3>Service Three</h3>
+                    <p>Description of service three.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" aria-labelledby="contact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Acme Corporation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form validation with an alert
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            if (!this.checkValidity()) {
+                alert('Please fill in all required fields.');
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+
